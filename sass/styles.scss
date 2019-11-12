@@ -1,0 +1,51 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.active-area {
+  @include make-row();
+
+  .deck-count {
+    @include make-col(12, 12);
+
+    @include media-breakpoint-up(md) {
+      @include make-col(2, 12);
+    }
+  }
+
+  .hand {
+    @include make-col(12, 12);
+
+    @include media-breakpoint-up(md) {
+      @include make-col(10, 12);
+    }
+  }
+}
+
+
+.hand {
+  display: flex;
+  flex-wrap: wrap;
+
+  .card-wrapper {
+    margin-bottom: $spacer;
+    padding: $spacer;
+
+    @include make-col(6, 12);
+
+    @include media-breakpoint-up(md) {
+      @include make-col(4, 12);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(3, 12);
+    }
+
+    .card {
+      height: 100%;
+      text-align: center;
+
+      .card-value {
+        margin-right: $spacer / 2;
+      }
+    }
+  }
+}

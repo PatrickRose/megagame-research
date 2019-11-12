@@ -1,0 +1,35 @@
+{
+  "name": "research-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register tests/**/*.spec.ts",
+    "build": "gulp build",
+    "develop": "gulp develop"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.4",
+    "@types/mocha": "^5.2.7",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "bootstrap": "^4.3.1",
+    "chai": "^4.2.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "mocha": "^6.2.2",
+    "node-sass": "^4.13.0",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Megagame research game!</title>
+        <script src="https://kit.fontawesome.com/5f148c0c20.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./dist/css/styles.css" />
+    </head>
+    <body>
+        <main class="container">
+			<h1>Megagame research game</h1>
+
+			<p class="lead">
+				Thanks for testing this for me!
+				Send me the scores you get at the end
+			</p>
+
+			<h2>Rules</h2>
+
+			<p>
+				The basic gist is to create matching "pairs". A pair is a collection of cards separated out into a left or right side where:
+			</p>
+
+			<ol>
+				<li>All of the cards in a side has the same "suit"</li>
+				<li>The sum of the value of the cards in the right side equals the value of the cards in the left side</li>
+			</ol>
+
+			<p>
+				Some of the cards are marked as "No single" - these cards must have another card in the same side as them.
+			</p>
+
+			<p>
+				The game ends when you have no cards left in your hand, and you begin scoring.
+			</p>
+			
+			<p>
+				When the game finishes you score the pairs. A pair can be scored as either one of the suits used to make it. If it is "balanced" (both the left and right side have the same number of cards in them) then you get to score the pair again.
+			</p>
+
+			<p class="alert alert-info">
+				Future interations of this may have various decks for you to try out. Don't hold your breath though :-)
+			</p>
+			
+			<div id="example" />
+		</main>
+
+        <!-- Dependencies -->
+        <script src="./node_modules/react/umd/react.development.js"></script>
+        <script src="./node_modules/react-dom/umd/react-dom.development.js"></script>
+
+        <!-- Main -->
+        <script src="./dist/main.js"></script>
+    </body>
+</html>
